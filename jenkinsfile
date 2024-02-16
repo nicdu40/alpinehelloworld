@@ -98,6 +98,7 @@ pipeline {
             environment {
                 HOSTNAME_DEPLOY_PRODG = "ec2-54-196-104-140.compute-1.amazonaws.com"
             }
+            
             steps {
                 sshagent(credentials: ['SSH_AUTH_PROD']) {
                     sh '''
